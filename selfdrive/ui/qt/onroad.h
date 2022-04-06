@@ -46,6 +46,10 @@ class OnroadHud : public QWidget {
   Q_PROPERTY(bool hideDM MEMBER hideDM NOTIFY valueChanged);
   Q_PROPERTY(int status MEMBER status NOTIFY valueChanged);
 
+  Q_PROPERTY(bool showVTC MEMBER showVTC NOTIFY valueChanged);
+  Q_PROPERTY(QString vtcSpeed MEMBER vtcSpeed NOTIFY valueChanged);
+  Q_PROPERTY(QColor vtcColor MEMBER vtcColor NOTIFY valueChanged);
+
 public:
   explicit OnroadHud(QWidget *parent);
   void updateState(const UIState &s);
