@@ -1,0 +1,8 @@
+services:
+  openpilot:
+    container_name: openpilot
+    build:
+      context: .
+      dockerfile: Dockerfile.openpilot
+    tty: true
+    stdin_open: true
